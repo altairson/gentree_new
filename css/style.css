@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input.name {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+#options {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+#options i {
+    font-size: 25px;
+    color: #555;
+    cursor: pointer;
+}
+
+#options i:hover {
+    color: crimson;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+#editor {
+    width: 3000px;
+    height: 3000px;
+    background-image: linear-gradient(rgb(255 255 255 / 80%) 0.1em, #cdcdcd 0.1em), linear-gradient(90deg, rgb(239 239 239) 0.1em, black 0.1em);
+    background-size: 10px 10px;
+    position: relative;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.left {
+    position: fixed;
+    width: 50px;
+    height: 90%;
+    left: 0;
+    z-index: 3;
+}
+
+.right {
+    position: fixed;
+    width: 50px;
+    height: 90%;
+    right: 0;
+    z-index: 3;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 47px;
+    z-index: 3;
+}
+
+.top:hover {
+    box-shadow: inset 0px 15px 10px 1px #33333359;
+}
+
+.bottom:hover {
+    box-shadow: inset 0px -15px 10px 1px #33333359;
+}
+
+.left:hover {
+    box-shadow: inset 15px 0px 10px 1px #33333359;
+}
+
+.right:hover {
+    box-shadow: inset -15px 0px 10px 1px #33333359;
+}
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 53px;
+    z-index: 3;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+
+  #base {
+      position: absolute;
+      border: 1px solid red;
+      width: 80px;
+      height: 30px;
+      z-index: 1;
+  }
+
+  .box {
+    position: absolute;
+    border: 1px solid skyblue;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+.focused {
+    box-shadow: 0px 0px 10px 1px green;
+}
+
+#lines {
+    position: absolute;
+}
+
+.icon-active {
+    color: crimson !important;
+}
+
+
+.hidden {
+    display: none !important;
+}
