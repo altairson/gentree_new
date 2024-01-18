@@ -247,7 +247,6 @@ $(document).ready(function() {
 
             let input = document.createElement("INPUT");
             input.classList.add("name");
-            
             div.append(input);
             editor.append(div);
             input.focus();
